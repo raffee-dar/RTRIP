@@ -73,7 +73,8 @@ footer {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+    url("/assets/herobanner.jpg");
+    background-size: cover;
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
@@ -81,13 +82,15 @@ footer {
 }
 
 .hero-subheading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .hero-input {
   width: 80%;
   height: 50px;
-  padding: 16px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
 }
