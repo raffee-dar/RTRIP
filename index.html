@@ -56,7 +56,20 @@ mixpanel.track('Sign Up', {
   </head>
 
   <body>    
-    
+       <script>
+// Uncomment if you used npm or yarn in Step 1
+//import mixpanel from 'mixpanel-browser';
+ 
+mixpanel.init(5f8bf9ffdc26db8be3463448e131f599, { debug: true, track_pageview: true, persistence: 'localStorage' });
+ 
+// Set this to a unique identifier for the user performing the event.
+mixpanel.identify(/* \"<USER_ID\"> */)
+ 
+// Track an event. It can be anything, but in this example, we're tracking a Sign Up event.
+mixpanel.track('Sign Up', {
+  'Signup Type': 'Referral'
+})
+  </script>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR9HHBB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
