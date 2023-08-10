@@ -145,13 +145,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- TODO: MODULE_LAYOUT -->
 
   <script>
-    const trackTile
-    trackTile.addEventListener("click", () => {
-    // Track the event when the tile is clicked
-    mixpanel.track("Tile Clicked", {
-      location: "Homepage",
-      tileLabel: "City Name"
-    });
+   window.onload = function(){
+     //track page load event
+     mixpanel.track('page loaded',{
+       pageName: document.title,
+       url:window.location.href
+     });
+   };
   </script>
 
 
