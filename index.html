@@ -133,6 +133,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="./pages/adventures/index.html"><img src="./assets/cities/h.jpg" class="img-thumbnail mb-4" alt="city1"></a>  
           <h3 class="tile-text">California</h3>
         </div>
+
+        <script>
+          $(".tile").click(function(){
+            mixpanel.track("Tile clicked !!");
+          })
+        </script>
       </div>
     </div>
     </div>
@@ -152,6 +158,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        url:window.location.href
      });
    };
+
+ 
+    
   </script>
 
 
