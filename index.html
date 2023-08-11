@@ -134,11 +134,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3 class="tile-text">California</h3>
         </div>
 
-        <script>
-          $(".tile").addEventListener('click',function(){
-            mixpanel.track("Tile clicked !!");
-          })
-        </script>
       </div>
     </div>
     </div>
@@ -158,8 +153,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        url:window.location.href
      });
    };
-  </script>
 
+          document.querySelector(".tile").addEventListener('click',function(){
+            mixpanel.track("Tile clicked !!");
+          })
+        </script>
 
     
     <!-- Add scripts needed for bootstrap to work -->
