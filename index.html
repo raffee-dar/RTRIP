@@ -135,7 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <script>
-          $(".tile").click(function(){
+          $(".tile").addEventListener('click',function(){
             mixpanel.track("Tile clicked !!");
           })
         </script>
@@ -158,9 +158,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        url:window.location.href
      });
    };
-
- 
-    
   </script>
 
 
