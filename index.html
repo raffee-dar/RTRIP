@@ -153,11 +153,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        url:window.location.href
      });
    };
+    document.querySelector("div h1").addEventListener('click', function() {
+    mixpanel.track("heading clicked !!",{
+      'button_name': 'myButton',
+    'clicked_element_id': '123'
+    });
+    console.log("heading clicked event logged.");
+});
 
-          document.querySelector(".tile").addEventListener('click',function(){
-            mixpanel.track("Tile clicked !!");
-          })
-        </script>
+  </script>
 
     
     <!-- Add scripts needed for bootstrap to work -->
